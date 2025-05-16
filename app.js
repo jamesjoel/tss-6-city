@@ -26,9 +26,9 @@ app.use(express.static(root));
 app.use(allRoutes);
 
 /* this code for deployment ---- start -----*/
-// app.get("*", (req, res)=>{
-//     res.sendFile("index.html", {root});
-// })
+app.get("*", (req, res)=>{
+    res.sendFile("index.html", {root});
+})
 /* this code for deployment ---- end -----*/
 
 
